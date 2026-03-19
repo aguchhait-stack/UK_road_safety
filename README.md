@@ -38,3 +38,27 @@ While many reports focus on rain or snow, this study reveals a "Good Weather Tra
 
 ## ⚖️ Future Work
 Because "Slight" accidents dominate the data, future versions will implement **SMOTE (Over-sampling)** and **Class Weighting** to help the algorithm better predict rare, high-stakes "Fatal" events.
+
+---
+
+### **License & Data Attribution**
+This project uses data provided by the **Department for Transport (DfT)** under the **Open Government Licence v3.0**.
+
+* **License:** [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+* **Collection Method:** Downloaded via `read_csv()` from the official DfT portal.
+* **Version / Release Date:** 25 September 2025.
+* **Access URL:** [Official Dataset](https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-provisional-2025.csv)
+* **Update Frequency:** Bi-annual (Provisional in November; Final in September 2026).
+* **Known Limitations:** Data is provisional; negative values (-1) represent missing or unknown data.
+
+### **Predictive Power: Modeling Collision Severity**
+The statistical model developed in this study achieved a **~74% accuracy rate**, indicating a remarkably strong relationship between behavioral inputs and the resulting **Collision Severity**.
+
+**Key Predictive Variables:**
+* **The Chronological Pulse:** Hour of the day and Day of the week.
+* **The Velocity Variable:** Speed limits in specific zones.
+* **The Severity Outcome:** How these factors intersect to determine whether a collision is classified as **Slight, Serious, or Fatal**.
+
+By focusing on **Collision Severity**, this analysis moves beyond simple counting and toward understanding the factors that lead to the most life-altering outcomes on UK roads.
+
+---
